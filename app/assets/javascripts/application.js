@@ -15,3 +15,6 @@
 //= require_tree .
 //= require twitter/bootstrap
 
+$(function(){
+	$('#navbar').scrollspy();
+});

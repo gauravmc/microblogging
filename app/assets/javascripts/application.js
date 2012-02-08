@@ -16,5 +16,7 @@
 //= require twitter/bootstrap
 
 $(function(){
-	$('#navbar').scrollspy();
+	var url = window.location.href;
+	url = url.substr(url.lastIndexOf("/"));
+	$(".nav").find("a[href='" + url + "']").parent('li').addClass("active");
 });

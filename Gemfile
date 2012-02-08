@@ -24,6 +24,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'less-rails-bootstrap'
+
 group :test do
   gem 'capybara', '1.1.2'
 end

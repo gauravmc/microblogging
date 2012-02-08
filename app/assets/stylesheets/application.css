@@ -10,4 +10,14 @@
  *
  *= require_self
  *= require_tree .
+ *= require twitter/bootstrap
 */
+.content {
+	min-height:300px;
+	margin-top:10px;
+}
+
+.footer {
+	width:180px;
+	margin:0 auto;
+}

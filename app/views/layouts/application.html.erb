@@ -11,9 +11,9 @@
   <div class="row-fluid">
     <div class="span6 well content"><!-- Content -->
       <section>
-        <% flash.each do |key, value| %>
-          <div class="alert alert-<%= key %>"><%= value %></div>
-        <% end %>
+				<% flash.each do |key, value| %>
+				  <div class="alert alert-<%= key %>"><%= value %></div>
+				<% end %>
         <%= yield %>
       </section>
     </div><!-- Content -->

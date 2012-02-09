@@ -21,3 +21,12 @@
 	width:180px;
 	margin:0 auto;
 }
+
+#signinModal{
+	width:320px;
+	margin-left:-160px;
+}
+
+#signinModal input[type=text], #signinModal input[type=password]{
+	width:280px;
+}

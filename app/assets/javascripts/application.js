@@ -19,4 +19,9 @@ $(function(){
 	var url = window.location.href;
 	url = url.substr(url.lastIndexOf("/"));
 	$(".nav").find("a[href='" + url + "']").parent('li').addClass("active");
+	
+	if(url == '/sessions')
+	{
+		$('#signinModal').modal('show')
+	}
 });

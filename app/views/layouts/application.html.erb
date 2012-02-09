@@ -4,12 +4,13 @@
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+	<%= yield :javascript_includes %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span6 well content"><!-- Content -->
+    <div class="span5 well content"><!-- Content -->
       <section>
 				<% flash.each do |key, value| %>
 				  <div class="alert alert-<%= key %>"><%= value %></div>

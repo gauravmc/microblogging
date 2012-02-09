@@ -1,4 +1,4 @@
-<div class="span5">
+<div class="span6">
 	<div class="navbar"><!-- Header -->
 	  <div class="navbar-inner">
 	    <div class="container">
@@ -7,8 +7,14 @@
 	      <li><%= link_to "Home", root_path %></li>
 	      <li><%= link_to "Help", help_path %></li>
 	      <% if signed_in? %>
+        	<li><%= link_to "Users", users_path %></li>
 	        <li><%= link_to "Profile", current_user %></li>
-	      <% end %>
+	        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+	      <% else %>
+					<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>
+					<li><%= link_to "News", 'http://news.railstutorial.org/', target: "_blank" %></li>
+				<% end %>
 				<!-- <li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 				  <ul class="dropdown-menu">
@@ -21,9 +27,9 @@
 				</li> -->
 			</ul>
 	      <% if signed_in? %>
-	        <%= link_to "Sign out", signout_path, method: :delete, class: "btn btn-success" %>
+	        <%= link_to "Sign Out", signout_path, method: :delete, class: "btn btn-success" %>
 	      <% else %>
-	      	<a class="btn btn-success" data-toggle="modal" href="#signinModal">Sign In</a>
+        	<%= link_to "Sign In", '#signinModal', 'data-toggle'=>'modal', class: "btn btn-success" %>
 	      <% end %>
 	    </div>
 	  </div>

@@ -13,7 +13,6 @@
  *= require twitter/bootstrap
 */
 .content {
-	min-height:300px;
 	margin-top:10px;
 }
 

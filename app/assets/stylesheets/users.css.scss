@@ -1,3 +1,27 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+
+  img.gravatar {
+    margin-bottom: -10px;
+  }
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+}
+
+#signup-form-container {
+	width:220px;
+	margin:0 auto;
+}

@@ -10,7 +10,7 @@
 <body>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span5 well content"><!-- Content -->
+    <div class="span5 well" id="content"><!-- Content -->
       <section>
 				<% flash.each do |key, value| %>
 				  <div class="alert alert-<%= key %>"><%= value %></div>

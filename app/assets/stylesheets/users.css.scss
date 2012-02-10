@@ -19,6 +19,10 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
+	strong {
+		color:#444;
+		margin-right:5px;
+	}
 }
 
 #signup-form-container {
@@ -30,5 +34,9 @@ ul.users {
   margin-top: 1em;
   li {
     list-style: none;
+	div {
+		display:inline-block;
+		margin-right:10px;
+	}
   }
 }

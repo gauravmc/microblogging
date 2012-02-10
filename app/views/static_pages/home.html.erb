@@ -1,9 +1,21 @@
 <% provide(:title, 'Home') %>
-<h1>Microblogging</h1>
-<p>
-  This is the home page for the sample application I've made using Ruby on Rails.
-	This app is basically for microblogging, similar to Twitter. Hope you enjoy it! :)
-</p>
-<div style="text-align:center;">
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-info" %>
-</div>
+<% if signed_in? %>
+	<table class="table-condensed profile">
+	  <tr>
+	    <td class="main">
+        <h1 class="micropost">What's up?</h1>
+        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/feed' %>
+	    </td>
+	  </tr>
+	</table>
+<% else %>
+	<h1>Microblogging</h1>
+	<p>
+	  This is the home page for the sample application I've made using Ruby on Rails.
+		This app is basically for microblogging, similar to Twitter. Hope you enjoy it! :)
+	</p>
+	<div style="text-align:center;">
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-info" %>
+	</div>
+<% end %>

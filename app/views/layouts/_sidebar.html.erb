@@ -25,12 +25,14 @@
 				    <li><%= link_to "Separated link", '#' %></li>
 				  </ul>
 				</li> -->
+				<%= link_to "Tweet", root_path, class: "btn" if signed_in? %>
 			</ul>
 	      <% if signed_in? %>
 	        <%= link_to "Sign Out", signout_path, method: :delete, class: "btn btn-success" %>
 	      <% else %>
         	<%= link_to "Sign In", '#signinModal', 'data-toggle'=>'modal', class: "btn btn-success" %>
 	      <% end %>
+      	
 	    </div>
 	  </div>
 	</div><!-- Header -->

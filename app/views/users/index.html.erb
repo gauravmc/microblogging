@@ -1,11 +1,15 @@
 <%= provide :title, 'All users' %>
-<h1>All users</h1>
-<div style="margin-left:70px;">
-<%= will_paginate %>
+<table class="table-condensed profile">
+  <tr>
+    <td class="main">
+			<h1>All users</h1>
+			<%= will_paginate %>
 
-<ul class="users">
-	<%= render @users %>
-</ul>
+			<ul class="users">
+				<%= render @users %>
+			</ul>
 
-<%= will_paginate %>
-</div>
+			<%= will_paginate %>
+    </td>
+  </tr>
+</table>

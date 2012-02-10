@@ -1,8 +1,8 @@
 <li>
-  <div style="vertical-align:bottom;"><%= gravatar_for user, size: 30 %></div>
-  <div style="vertical-align:top;">
+  <div><%= gravatar_for user, size: 30 %></div>
+  <div>
 	<%= link_to user.name, user, class: "btn btn-small" %></div>
-  <div style="margin-bottom:12px;">
+  <div>
   <% if current_user.admin? && !current_user?(user) %>
     | &nbsp;<%= link_to "delete", user, method: :delete, confirm: "You sure?" %>
   <% end %>

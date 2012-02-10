@@ -3,7 +3,9 @@
   <tr>
     <td class="main">
 			<h2><%= gravatar_for @user %>
-			<span style="color:#555;"><%= @user.name %></span></h2>
+			<span style="color:#555;"><%= @user.name %></span>
+			</h2>
+			<div><br/><%= render 'follow_form' if signed_in? %></div>
 			<% if @user.microposts.any? %>
         <table class="microposts table">
           <%= render @microposts %>
@@ -13,8 +15,8 @@
     </td>
     <td class="sidebar">
       <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
       <strong>Microposts</strong> <%= @user.microposts.count %>
-    </td>
+      <%= render 'shared/stats' %>
+		</td>
   </tr>
 </table>

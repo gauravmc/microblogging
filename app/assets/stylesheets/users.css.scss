@@ -23,6 +23,10 @@ td.sidebar {
 		color:#444;
 		margin-right:5px;
 	}
+	
+	.gravatar {
+		margin:10px 0px 0px 0px;
+	}
 }
 
 #signup-form-container {
@@ -36,7 +40,10 @@ ul.users {
     list-style: none;
 	div {
 		display:inline-block;
-		margin-right:10px;
+		margin-right:5px;
+		img {
+			margin:10px 2px;
+		}
 	}
   }
 }

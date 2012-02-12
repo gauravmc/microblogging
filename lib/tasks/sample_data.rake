@@ -13,7 +13,9 @@ def make_users
                        email: "gmail@gauravchande.com",
                        password: "7sjy1bss",
                        password_confirmation: "7sjy1bss")
+                       
   admin.toggle!(:admin)
+  
   99.times do |n|
     name  = Faker::Name.name
     email = "example-#{n+1}@railstutorial.org"

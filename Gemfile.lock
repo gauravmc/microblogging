@@ -80,8 +80,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    mysql2 (0.3.11)
     nokogiri (1.5.0)
-    pg (0.12.2)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.1)
@@ -163,7 +163,7 @@ DEPENDENCIES
   faker (= 1.0.1)
   jquery-rails
   less-rails-bootstrap
-  pg (= 0.12.2)
+  mysql2
   rails (= 3.2.1)
   rspec-rails (= 2.8.1)
   sass-rails (~> 3.2.3)

@@ -4,7 +4,7 @@ gem 'rails', '3.2.1'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'bootstrap-will_paginate', '0.0.6'
-
+gem 'capistrano'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -34,7 +34,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'mysql2'
 end
 
 # To use ActiveModel has_secure_password

@@ -21,7 +21,7 @@ set :application, 'microblogging'
 
 # file paths
 set :repository,  "git@github.com:gauravmc/microblogging.git" 
-set :deploy_to, "/home/gauravmc/public_html/apps/microblogging"
+set :deploy_to, "/home/gauravmc/public_html/apps/#{application}"
 
 # distribute your applications across servers (the instructions below put them
 # all on the same server, defined above as 'domain', adjust as necessary)

@@ -23,6 +23,6 @@ production:
   encoding: utf8
   database: microblogging
   pool: 5
-  username: root
-  password:
+  username: gauravmc
+  password: 7sjy1bss
   socket: /tmp/mysql.sock
